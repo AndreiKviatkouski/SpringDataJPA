@@ -1,0 +1,21 @@
+POST http://localhost:8080/user/add
+Content-Type: application/json
+
+{
+  "name": "Andrei",
+  "login": "Andrei1",
+  "password": "123",
+  "address": "Minsk",
+  "phone": [
+    {"telephone": "123456"},
+    {"telephone": "123456"}
+  ]
+}
+
+###
+GET http://localhost:8080/user/getByLogin?login=Andrei
+Content-Type: application/json
+###
+
+}
+
